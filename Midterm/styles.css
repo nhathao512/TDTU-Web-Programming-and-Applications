@@ -1,0 +1,414 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf2e8;
+
+}
+  
+header 
+{
+    background-color: #38adae;
+    color: #ffffff;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+}
+
+main
+{
+    padding: 20px;
+    margin-top: 90px;
+}
+
+footer 
+{
+    background-color: #002c3e;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+nav ul 
+{
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li 
+{
+    list-style: none;
+    padding: 0;
+}
+  
+nav ul li a 
+{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    color: #fff;
+    font-weight: bold;
+    
+}
+  
+nav ul li a:hover 
+{
+    background-color: #ffffff;
+    color: #38adae;
+    padding: 3px 3px;
+    border: 2px solid #333;
+    border-radius: 20px; 
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+@media (max-width: 768px) 
+{
+    .header-content 
+    {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo 
+    {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .logo img 
+    {
+      width: 250px;
+    }
+  
+    .menu 
+    {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu li 
+    {
+      margin: 5px 0;
+    }
+  
+    footer 
+    {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .hotro
+    {
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .about-info
+    {
+        margin-top: 30px;
+    }
+
+    .sizedo
+    {
+        width: 450px;
+    }
+}
+  
+@media (max-width: 480px) 
+{
+    .hotro
+    {
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .phone
+    {
+        font-size: 15px;
+    }
+
+    .logo img 
+    {
+        width: 200px;
+    }
+
+    .hotro
+    {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-info
+    {
+        margin-top: 20px;
+    }
+
+    .sizedo
+    {
+        width: 300px;
+    }
+}
+
+.header-content 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+  
+.logo 
+{
+    width: 50%;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.logo img
+{
+    width: 35%;
+    right: 10%;
+    left: 20%;
+    border: 3px solid #1d1e1e;
+}
+
+.menu 
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    
+     
+}
+  
+.menu li 
+{
+    margin: 10px 20px 0px;
+    
+}
+  
+.menu li a 
+{
+    text-decoration: underline;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+    
+}
+  
+.image-section 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text 
+{
+    color: red;
+    font-weight: bold;
+}
+
+.giam
+{
+    color: black;
+    font-weight: normal;
+}
+
+
+.card-title
+{
+    font-size: 14.5px;
+    font-weight: bold;
+    display: inline;
+}
+  
+
+.brief-description 
+{
+    margin-bottom: 10px; 
+}
+  
+#showMore 
+{
+    margin-top: 10px;
+    border-radius: 8px; 
+    line-height: 1.5;
+    background-color: #a2f3f3;
+    color: black;
+}
+
+#showMore:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.about-link 
+{
+    padding: 0;
+    display: inline;
+    justify-content: center; 
+    
+}
+  
+.about-link:hover 
+{
+    background-color: #ffffff;
+    color: #38adae;
+    padding: 3px 3px;
+    border: 2px solid #333;
+    border-radius: 20px; 
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.index-link 
+{
+    padding: 0;
+    display: inline;
+    justify-content: center; 
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.index-link:hover 
+{
+    background-color: #ffffff;
+    color: #38adae;
+    padding: 3px 3px;
+    border: 2px solid #333;
+    border-radius: 20px; 
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.solog
+{
+    text-align: center;
+    margin: 20px 50px 10px 50px;
+    line-height: 1.5;
+
+}
+
+.hotro
+{
+    font-size: 20px;
+}
+
+.hotro i
+{
+    font-size: 20px;
+}
+
+.phone
+{
+    font-weight: bold;
+}
+
+.indam 
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    padding: 0px;
+    color: black;
+    line-height: 1.5;
+}
+
+.fa a
+{
+    font-size: 17px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.about-info p
+{
+    line-height: 1.5;
+}
+
+.banthan img
+{
+    border: 2px solid rgb(55, 53, 53) ;
+    border-radius: 8px;
+}
+
+.banthan
+{
+    padding-top: 20px;
+}
+
+#banthan-contact a
+{
+    font-size: 20px;
+    color: black;
+    line-height: 2;
+}
+
+.thongtin
+{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.card-img-top:hover
+{
+    transform: scale(1.1);
+}
+
+.scroll
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.scroll:hover 
+{
+    color: #0c1825;
+}
+
+.br 
+{
+    padding-top: 15px;
+}
+
+.sizedo
+{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.tieude
+{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}

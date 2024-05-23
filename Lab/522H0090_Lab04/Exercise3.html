@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .error-msg {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-6 col-md-8 col-sm-10 mt-5 p-4 border rounded mx-auto"
+        >
+          <form action="" id="myForm" class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="First-name">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  id="First-name"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">First name is required</div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Last-name">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  id="Last-name"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Last name is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Username">User Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                id="Username"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please enter your username.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                id="Password"
+                required
+              />
+              <div class="invalid-feedback">Password is not valid</div>
+            </div>
+
+            <div class="mb-1">Gender</div>
+            <div class="form-group form-inline">
+              <div class="custom-control custom-radio mr-3">
+                <input
+                  type="radio"
+                  class="custom-control-input"
+                  id="gender-male"
+                  name="gender"
+                  value="male"
+                  required
+                />
+                <label class="custom-control-label" for="gender-male">
+                  Male
+                </label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input
+                  type="radio"
+                  class="custom-control-input"
+                  id="gender-female"
+                  name="gender"
+                  value="female"
+                  required
+                />
+                <label class="custom-control-label" for="gender-female">
+                  Female
+                </label>
+              </div>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please select a gender.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select
+                id="country"
+                name="country"
+                class="custom-select"
+                required
+              >
+                <option selected disabled value="">Select a country</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="thailand">Thailand</option>
+                <option value="singapore">Singapore</option>
+              </select>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please select a country.</div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="remember"
+                  name="remember"
+                />
+                <label class="custom-control-label" for="remember"
+                  >Remember me</label
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-success px-5 mr-2" type="submit">
+                Login
+              </button>
+              <button class="btn btn-outline-success px-5" type="submit">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript code to handle form validation
+      (function () {
+        "use strict";
+
+        var forms = document.querySelectorAll(".needs-validation");
+
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>

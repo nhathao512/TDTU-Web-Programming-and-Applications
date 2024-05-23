@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/f1831153cc.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./Styles/news.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/card.css">
+</head>
+<style>
+    #ad{
+    border: 1px solid white;
+    width: 63vw;
+    margin: auto;
+    margin-top: 3vw;
+}
+
+#ad>img{
+    width: 100%;
+}
+
+#container{
+    border: 3px solid white;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    font-family: BentonSans-Bold,Arial,Noto Sans,sans-serif;
+    margin-top: 2vw;
+}
+
+#leftSidebar{
+    border: 1px solid white;
+    width: 80vw;
+    padding-top: 1vw;
+    border-radius: 1vw;
+    /* height: 200vw; */
+    margin-top: 2vw;
+    height: fit-content;
+    /* position: absolute; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#leftSidebar>div{
+    padding: 1.5vw 1vw;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 1vw;
+}
+
+#rightSidebar{
+    /* border: 1px solid red; */
+    width: 18vw;
+    margin-left:2vw;
+    /* height: 4000px; */
+    border-radius: 1vw;
+    height: fit-content;
+    /* padding: 2vw 2vw; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h3{
+   color:black;
+   font-size: 40px;
+   margin-left: 2vw;
+}
+
+h1{
+    font-size: 29px;
+}
+
+.p1{
+    font-size: 18px;
+}
+
+#akash{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#akash>div{
+    border: 1px solid white;
+    display: flex;
+}
+
+#akash1>img{
+    border: 1px solid white;
+    border-radius: 5vw;
+    width: 3vw;
+}
+
+#akash2{
+    border: 1px solid white;
+    margin-left: 0.3vw;
+}
+
+.p2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p3{
+    font-size: 15px;
+    color: gray;
+    margin-top: -0.5vw;
+}
+
+#akash3>img{
+    border: 1px solid white;
+    border-radius: 5vw;
+    width: 1.8vw;
+}
+
+#akash4>img{
+    border: 1px solid white;
+    border-radius: 5vw;
+    width: 1.8vw;
+    margin-left: 0.3vw;
+}
+
+#img1{
+  border: 3px solid white;
+  width: 100%;
+}
+
+#img1>img{
+width: 100%;
+border-top-left-radius: 1vw;
+border-top-right-radius: 1vw;
+}
+
+.p4{
+font-size: 18px;
+padding: 1vw 2vw;
+padding-left: 2.1vw;
+margin-top: -0.5vw;
+color: white;
+width: 93%;
+border-bottom-left-radius: 1vw;
+border-bottom-right-radius: 1vw;
+background-color: #000000;
+}
+
+#content{
+margin-top: 1vw;
+border-radius: 1vw;
+/* border: 3px solid blue; */
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#spon{
+margin-top: 3vw;
+}
+
+#spon>p{
+color: gray;
+font-weight: bold;
+}
+
+#sponContent{
+display: flex;
+gap: 1vw;
+}
+
+#sponContent>div{
+border: 1px solid white;
+width: 33%;
+}
+
+#sponContent>div>img{
+width: 100%;
+}
+
+h5{
+color: gray;
+margin-top: -1vw;
+}
+
+#ravi{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+background-color: white;
+margin-top: -14vw;
+position: absolute;
+/* z-index: 100; */
+/* display: none; */
+}
+
+#ravi>div{
+display: flex;
+border: 1px white;
+width: 15vw;
+}
+
+#ravi>div>img{
+width: 10%;
+height: 10%;
+}
+
+#ravi>div>p{
+font-size: 20px;
+margin-left: 5%;
+margin-top: -1%;
+}
+
+#ravi1>div{
+border: 1px solid black;
+width: 12vw;
+border-radius: 1vw;
+padding-left: 1vw;
+background-color: #000000;
+color: white;
+font-weight: bold;
+margin-top: -4vw;
+position: absolute;
+}
+
+#leftSidebar>div>div>img{
+width: 100%;
+}
+
+#leftSidebar>div{
+    display: flex;
+    gap: 1vw;
+}
+
+#content>div{
+   border: 1px solid white;
+   margin-top: 1vw;
+   margin-left: -8vw;
+   width: fit-content;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#content>div>img{
+   width: 18vw;
+}
+
+#lastC{
+    width: 100vw;
+    margin: auto;
+    margin-top: 5vw;
+    display: flex;
+    justify-content:space-around;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+</style>
+<body>
+    <div id="topcardNav"></div>
+    <div id="navbar-container"></div>
+
+    <div id="ad"><img src="https://tpc.googlesyndication.com/simgad/16233217720762028300?" alt=""></div>
+    <div id="container">
+          <div id="leftSidebar">
+               <h3>FEATURES</h3>
+          </div>
+          <div id="rightSidebar">
+            
+              <div id="content"> </div>
+              
+          </div>
+    </div>
+    <div id="ad"><img src="https://tpc.googlesyndication.com/simgad/10926761020657163993?" alt=""></div>
+
+    <div id="footer"></div>
+    <div id="lastC">
+        <p>"Terms of Use   •   Privacy Policy   •   Interest-Based Ads   •   Addendum to the Global Privacy Policy    •   Feedback"</p>
+        <p>© 2022 ESPN Sports Media Ltd. All rights reserved</p>
+    </div>
+   
+</body>
+</html>
+<!-- sub navbar -->
+<script src="./scripts/index.js" type="module"></script>
+
+<!-- TopNavbar -->
+<script type="module">
+    let nav = document.getElementById('topcardNav');
+
+    import navbar from './components/topnav.js'
+    nav.innerHTML = navbar()
+    
+    import cardJS from './scripts/card.js'
+    // console.log(cardJS)
+
+    cardJS()
+</script>
+
+<!-- Footer -->
+<script type="module">
+    
+    import footerJS from './components/footer.js'
+   
+    footerJS()
+</script>
+
+<!-- News Content -->
+<script>
+    let content=document.getElementById("content");
+          
+          let D1q=document.createElement("div");
+          let im1q=document.createElement("img");
+          im1q.src="https://secure-ds.serving-sys.com/resources/PROD/asset/144375/IMAGE/20220809/Rbi_ENG_1_300x250_8aug22_72879983397192489.jpg"
+          D1q.append(im1q)
+
+          
+          let D2q=document.createElement("div"); 
+          let im2q=document.createElement("img");
+          im2q.src="https://tpc.googlesyndication.com/simgad/15693210795370267328?"
+          D2q.append(im2q)
+
+
+          let D3q=document.createElement("div");
+          let im3q=document.createElement("img");
+          im3q.src="https://secure-ds.serving-sys.com/resources/PROD/asset/144375/IMAGE/20220809/Rbi_ENG_1_300x250_8aug22_72879983397192489.jpg"
+          D3q.append(im3q)
+
+
+          let D4q=document.createElement("div");
+          let im4q=document.createElement("img");
+          im4q.src="https://tpc.googlesyndication.com/simgad/13683194396473605559?"
+          D4q.append(im4q)
+
+
+          let D5q=document.createElement("div");
+          let im5q=document.createElement("img");
+          im5q.src="https://tpc.googlesyndication.com/simgad/3225541195986836162? "
+          D5q.append(im5q)
+
+    content.append(D5q,D4q,D3q,D2q,D1q);
+</script>
+
+<!-- LeftSideBar -->
+<script>
+
+    // NEWS 1
+
+          let leftSidebar=document.getElementById("leftSidebar");
+          
+          let D1=document.createElement("div");
+          let D1a=document.createElement("div");
+          let D1b=document.createElement("div");
+          let r1=document.createElement("p");
+          r1.innerText="Kohli's slump: two factors that might have had a role to play"
+          r1.setAttribute("class","p2")
+          let s1=document.createElement("p");
+          s1.innerText="1h ago • Akash Chopra";
+          s1.setAttribute("class","p3")
+          let im1=document.createElement("img");
+          im1.src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_70/lsci/db/PICTURES/CMS/342600/342663.4.jpg"
+          D1a.append(im1)
+          D1b.append(r1,s1)
+          D1.append(D1a,D1b)
+
+          D1.addEventListener("click",function (){
+              console.log("yes")
+              window.location.href="news1.html";
+          })
+
+
+    // NEWS 2
+          
+          let D2=document.createElement("div");
+          let D2a=document.createElement("div");
+          let D2b=document.createElement("div");
+          let r2=document.createElement("p");
+          r2.innerText="VVS Laxman named India's interim head coach for Asia Cup"
+          r2.setAttribute("class","p2")
+          let s2=document.createElement("p");
+          s2.innerText="3h ago • Akash Chopra";
+          s2.setAttribute("class","p3")
+          let im2=document.createElement("img");
+          im2.src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_70/lsci/db/PICTURES/CMS/342200/342229.4.jpg"
+          D2a.append(im2)
+          D2b.append(r2,s2)
+          D2.append(D2a,D2b)
+
+          D2.addEventListener("click",function (){
+              console.log("yes")
+              window.location.href="news2.html";
+          })
+
+
+    // NEWS 3
+
+          let D3=document.createElement("div");
+          let D3a=document.createElement("div");
+          let D3b=document.createElement("div");
+          let r3=document.createElement("p");
+          r3.innerText="Posers for India: The same old top three? Pant or Karthik, or both?"
+          r3.setAttribute("class","p2")
+          let s3=document.createElement("p");
+          s3.innerText="4h ago • Akash Chopra";
+          s3.setAttribute("class","p3")
+          let im3=document.createElement("img");
+          im3.src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_70/lsci/db/PICTURES/CMS/334400/334450.4.jpg"
+          D3a.append(im3)
+          D3b.append(r3,s3)
+          D3.append(D3a,D3b)
+
+          D3.addEventListener("click",function (){
+              console.log("yes")
+              window.location.href="news3.html";
+          })
+
+
+    // NEWS 4
+
+          let D4=document.createElement("div");
+          let D4a=document.createElement("div");
+          let D4b=document.createElement("div");
+          let r4=document.createElement("p");
+          r4.innerText="Chris Lynn signs 11-game Adelaide Strikers BBL deal to split time with ILT20"
+          r4.setAttribute("class","p2")
+          let s4=document.createElement("p");
+          s4.innerText="6h ago • Akash Chopra";
+          s4.setAttribute("class","p3")
+          let im4=document.createElement("img");
+          im4.src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_70/lsci/db/PICTURES/CMS/315100/315101.4.jpg"
+          D4a.append(im4)
+          D4b.append(r4,s4)
+          D4.append(D4a,D4b)
+
+          D4.addEventListener("click",function (){
+              console.log("yes")
+              window.location.href="news4.html";
+          })
+
+
+     // NEWS 5
+
+          let D5=document.createElement("div");
+          let D5a=document.createElement("div");
+          let D5b=document.createElement("div");
+          let r5=document.createElement("p");
+          r5.innerText="Scenes from India's training session - Kohli-Babar bromance, and intense nets in Dubai heat"
+          r5.setAttribute("class","p2")
+          let s5=document.createElement("p");
+          s5.innerText="9h ago • Akash Chopra";
+          s5.setAttribute("class","p3")
+          let im5=document.createElement("img");
+          im5.src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_70/lsci/db/PICTURES/CMS/344600/344698.4.jpg"
+          D5a.append(im5)
+          D5b.append(r5,s5)
+          D5.append(D5a,D5b)
+
+          D5.addEventListener("click",function (){
+              console.log("yes")
+              window.location.href="news5.html";
+          })
+
+          leftSidebar.append(D5,D4,D3,D2,D1);
+
+</script>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Password</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            margin: 50px auto;
+            width: 400px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .criteria {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .criterion {
+            width: 100%;
+        }
+        .status {
+            background-color: deepred;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: green;
+        }
+        .show-password-btn {
+            margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>New Password</h3>
+        <input type="password" class="input-field" id="password" placeholder="Enter your password">
+        <button class="show-password-btn" id="show-password-btn">Show Password</button>
+        <div class="criteria">
+            <div class="criterion">
+                <li><span>8 characters</span>
+                    <span class="status" id="length-status">&#x2717;</span></li>
+                <li><span>1 number</span>
+                    <span class="status" id="number-status">&#x2717;</span></li>
+                <li><span>1 special character</span>
+                    <span class="status" id="special-status">&#x2717;</span></li>
+                <li>
+                    <span>No leading or trailing spaces</span>
+                    <span class="status" id="space-status">&#x2717;</span>
+                </li>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const lengthStatus = document.getElementById('length-status');
+        const numberStatus = document.getElementById('number-status');
+        const specialStatus = document.getElementById('special-status');
+        const spaceStatus = document.getElementById('space-status');
+        const showPasswordBtn = document.getElementById('show-password-btn');
+
+        const checkPasswordStrength = (password) => {
+            const hasMinimumLength = password.length >= 8;
+            const hasNumber = /\d/.test(password);
+            const hasSpecialCharacter = /[!@#$%^&*]/.test(password);
+            const hasNoSpaces = /^\S+$/.test(password);
+
+            lengthStatus.textContent = hasMinimumLength ? '✔' : '!';
+            lengthStatus.classList.toggle('success', hasMinimumLength);
+            numberStatus.textContent = hasNumber ? '✔' : '!';
+            numberStatus.classList.toggle('success', hasNumber);
+            specialStatus.textContent = hasSpecialCharacter ? '✔' : '!';
+            specialStatus.classList.toggle('success', hasSpecialCharacter);
+            spaceStatus.textContent = hasNoSpaces ? '✔' : '!';
+            spaceStatus.classList.toggle('success', hasNoSpaces);
+        }
+
+        passwordInput.addEventListener('input', (e) => {
+            checkPasswordStrength(e.target.value);
+        });
+
+        // Function to toggle password visibility
+        showPasswordBtn.addEventListener('click', () => {
+            const passwordField = document.getElementById('password');
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+        });
+    </script>
+</body>
+</html>

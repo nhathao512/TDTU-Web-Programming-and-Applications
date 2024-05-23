@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #F0F0F0;
+}
+
+.hoder {
+    max-width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.hoder:not(.me):hover {
+    background-color: #8f8f8f;
+}
+
+.hoder .content {
+    word-wrap: break-word;
+}
+
+.me {
+    align-self: flex-end;
+    background-color: #32cd32;
+    color: white;
+
+}
+
+.me:hover
+{
+    background-color: #008000;
+}
+
+.hoder:not(.me) {
+    background-color: #bbbb;
+    align-self: flex-start;
+}

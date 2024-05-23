@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+
+    <style>
+
+        .m
+        {
+            vertical-align: top
+        }
+    </style>
+
+</head>
+<body>
+    <form action=" https://web-503073-wiolshzi6q-uc.a.run.app/lab01/register" method="POST"> 
+        <table>
+            <tr>
+                <td>Your Name</td>
+                <td>
+                    <input style="width: 100%;" type="text" name="name" id="name" placeholder="Full Name">
+                </td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input style="width: 100%;" type="text" name="email" id="email" placeholder="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td>
+                    <input style="width: 101.5%;" type="date" id="birthday" name="birthday">
+                </td>
+            </tr>
+            <tr>
+                <td>Birthtime</td>
+                <td>
+                    <input style="width: 101.5%;" type="time" id="birthtime" name="birthtime">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="Male"> Male
+                    <input type="radio" name="gender" id="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>From</td>
+                <td >
+                    <select style="width: 104%;" name="country" id="country">
+                        <option >Select a country</option>
+                        <optgroup label="Asia">
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Singapore">Singapore</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="France">France</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Finland">Finland</option>
+                            <option value="Ireland">Ireland</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;" name="favorite_id" id="favorite_id">Favorite IDE</td>
+                <td class="checkbox-ide" name="favorite_id" id="favorite_id">
+                    <input type="checkbox" name="favorite_ide" id="favorite_ide" value="Visual Studio Code"> Visual Studio Code <br>
+                    <input type="checkbox" name="favorite_ide" id="favorite_ide" value="Sublime Text"> Sublime Text <br>
+                    <input type="checkbox" name="favorite_ide" id="favorite_ide" value="Eclipse"> Eclipse <br>
+                    <input type="checkbox" name="favorite_ide" id="favorite_ide" value="Atom"> Atom <br>
+                    <input type="checkbox" name="favorite_ide" id="favorite_ide" value="Intelij Idea"> Intelij Idea
+                </td>
+            <tr>
+                <td>TOIEC Score</td>
+                <td>
+                    <input style="width: 102.5%;" type="range" id="toeic" name="toeic" min="0" max="990" value="1">
+                </td>
+            </tr>
+            <tr>
+                <td class="m">Message</td>
+                <td>
+                    <textarea style="width: 100.5%;" id="message" name="message" rows="5" cols="20"> </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Again">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

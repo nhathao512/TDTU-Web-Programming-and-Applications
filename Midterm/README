@@ -1,0 +1,26 @@
+Full name: Vo Nhat Hao 
+Student ID: 522H0090
+
+#Brief explanation of the project:
+This is an online sales website project called HaFo Store, specializing in providing fashion products and sports goods. 
+The main page (index.html) shows best-selling products, including football shirts, football boots and thermals.
+The "About Us" page (about.html) introduces the HaFo Store, including its history, goals, and information about the stores founder.
+
+#The technologies used:
+The project uses HTML, CSS, JavaScript and some libraries like Bootstrap and Font Awesome to design and create the look and feel of the website.
+
+#The steps to run the project:
+Download file 522H0090_VoNhatHao_Midterm.zip and extract.
+Open the index.html file in your web browser to see the main page.
+Click the Show More button to know more about the shirt and shoe material.
+Click the Best Saller button to go to the most popular clothes.
+Press the Size button to move to the clothing size table.
+Click the News button to see new items.
+Click the Sale button to see discounted items.
+Open the about.html file in your web browser to view the "About Us" page.
+Additionally, the page also provides store information and social media links. Furthermore, you can press the "About" button on the menu to go to the file (about.html).
+Additionally, you can also press the "Home" button on the menu to go to the file (index.html).
+
+
+This project was developed for the purpose of learning and practicing web programming skills.
+The images of this website are all taken from different websites. 'Thanks for letting me use the image'.
